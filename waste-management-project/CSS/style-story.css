@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+header {
+    position: relative;
+    width: 100%;
+    padding: 20px,10px;
+    text-align: right;
+    background-color: green;
+}
+
+
+
+.top{
+    top: 0;
+    position: relative;
+    width: 100%;
+    padding: 2px 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: black;
+}
+
+
+.top .navigation a{
+    color: blue;
+    border-radius: 20px;
+    padding: 2px 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 00.3s;
+    transition-property: background;
+}
+
+.top .navigation a:not(:last-child){
+    margin-right: 30px;
+}
+
+.top .navigation a:hover{
+    background: white;
+}
+
+#btn{
+    color: #fff;
+    background: #226A80;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property: background ;
+}
+
+#btn:hover{
+    background:green;
+}
+
+.background-image{
+    width: 100%;
+    height: 60vh;
+    background: url(../Images/story.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section .content{
+    padding: 20px;
+    
+}
+
+.section .content h2{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #226A80;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.section .content p{
+    padding: 30px;
+    color: green;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+ul{
+    
+    padding: 30px;
+    color: green;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+.report{
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.report h2{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #226A80;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.report .project-report{
+    padding: 30px;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+}
+
+
+
+
+
+.donation{
+    padding-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    
+    height: 30vh;
+    text-align: center;
+    background: green;
+}
+
+.donation p{
+    color: beige;
+    padding: 50px;
+
+}
+
+.donation #btn{
+    
+    background: #000;
+
+}
+
+.donation #btn:hover{
+    background: yellowgreen;
+}
+
+footer{
+    
+    text-align: center;
+    background-color:rgb(47, 47, 48);
+    padding: 30px;
+}
+
+.btm-nav{
+    top: 0;
+    position: relative;
+    width: 100%;
+    padding: 2px 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.btm-nav a{
+    color:black;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 00.3s;
+    transition-property: background;
+}
+
+.btm-nav a:hover{
+    background: white;
+}
+
+footer div{
+    padding-top: 30px;
+}
+
+.btm-media-icons {
+    padding-top: 20px;
+
+}
+
+.btm-media-icons a{
+    width: 40px;
+    height: 40px;
+}
+
+#copyright{
+    font-size: 12px;
+    font-style: italic;
+}
+
+/*responsiveness*/
+
+@media (max-width: 1024px) and (min-width: 800px){
+
+    header .media-icons a{
+        font-size: 19px;
+    }
+
+    .top .navigation a{
+        padding: 4px 9px;
+        width: 80px;
+        font-size: 14px;
+    }
+    
+    .top .navigation a:not(:last-child){
+        margin-right: 3px;
+    }
+
+    #img-h{
+        width: 150px;
+    }
+
+    #btn{
+        padding: 5px 9px;
+        
+    }
+
+    .background-image{
+        height: 50vh;
+    }
+    
+    .section .content{
+        padding: 17px;
+        
+    }
+    
+    .section .content h2{
+        font-size: 22px;
+    }
+    
+    .section .content p{
+        padding: 19px;
+        font-size: 19px;
+    }
+    
+    ul{
+        
+        padding: 19px;
+        font-size: 19px;
+    }
+    
+    .report{
+        height: 60vh;
+    }
+    
+    .report h2{
+        font-size: 22px;
+    }
+    
+    .report .project-report{
+        padding: 30px;
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .donation{
+        padding-top: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        height: 15vh;
+    }
+
+    .donation p{
+        padding: 25px;
+    
+    }
+
+
+
+}
+
+@media (max-width: 799px) and (min-width: 561px) {
+
+    header {
+        
+        padding: 4px 2px;
+        
+    }
+
+    header .media-icons a{
+        font-size: 15px;
+    }
+
+    .top .navigation a{
+        padding: 1px 3px;
+        width: 80px;
+        font-size: 9px;
+    }
+    
+    .top .navigation a:not(:last-child){
+        margin-right: 3px;
+    }
+
+    #img-h{
+        width: 100px;
+    }
+
+    #btn{
+        padding: 3px 7px;
+        
+    }
+
+    .background-image{
+        height: 50vh;
+    }
+    
+    .section .content{
+        padding: 14px;
+        
+    }
+    
+    .section .content h2{
+        font-size: 19px;
+    }
+    
+    .section .content p{
+        padding: 17px;
+        font-size: 15px;
+    }
+    
+    ul{
+        
+        padding: 17px;
+        font-size: 15px;
+    }
+    
+    .report{
+        height: 40vh;
+    }
+    
+    .report h2{
+        font-size: 19px;
+    }
+    
+    .report .project-report{
+        padding: 30px;
+        width: 100%;
+        height: 30vh;
+    }
+    
+    .donation{
+        padding-top: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        height: 15vh;
+    }
+
+    .donation p{
+        padding: 25px;
+    
+    }
+
+
+}
+
+@media (max-width: 560px){
+    header {
+        padding: 3px,1px
+        
+    }
+    
+    header .media-icons a{
+        font-size: 12px;
+    }
+
+
+    .top{
+        padding: 2px 2px;
+        justify-content: space-between;
+    }
+    
+    .top .navigation a{
+        padding: 1px 3px;
+        width: 80px;
+        font-size: 7px;
+
+    }
+    
+    .top .navigation a:not(:last-child){
+        margin-right:2px;
+    }
+
+    #img-h{
+        width: 90px;
+    }
+    
+    #btn{
+        padding: 2px 5px;
+        
+    }
+
+    .background-image{
+        height: 40vh;
+    }
+    
+    .section .content{
+        padding: 10px;
+        
+    }
+    
+    .section .content h2{
+        font-size: 16px;
+    }
+    
+    .section .content p{
+        padding: 15px;
+        font-size: 13px;
+    }
+    
+    ul{
+        
+        padding: 15px;
+        font-size: 13px;
+    }
+    
+    .report{
+        height: 50vh;
+    }
+    
+    .report h2{
+        font-size: 16px;
+    }
+    
+    .report .project-report{
+        padding: 30px;
+        width: 100%;
+        height: 30vh;
+    }
+    
+    .donation{
+        padding-top: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        height: 15vh;
+    }
+
+    .donation p{
+        padding: 25px;
+    
+    }
+
+}

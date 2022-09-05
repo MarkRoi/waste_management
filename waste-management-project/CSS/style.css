@@ -1,0 +1,734 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+header {
+    position: relative;
+    width: 100%;
+    padding: 20px,10px;
+    text-align: right;
+    background-color: green;
+}
+
+#btn-media-icons a{
+    
+    transition: 0.03s;
+    transition-property: background;
+}
+
+#btn-media-icons a:hover{
+    background: white;
+    cursor: pointer;
+}
+
+.top{
+    top: 0;
+    position: relative;
+    width: 100%;
+    padding: 2px 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    color: #fff;
+}
+
+.top .navigation a{
+    color: blue;
+    border-radius: 20px;
+    padding: 2px 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 00.3s;
+    transition-property: background;
+}
+
+.top .navigation a:not(:last-child){
+    margin-right: 30px;
+}
+
+.top .navigation a:hover{
+    background: white;
+}
+
+#btn{
+    color: #fff;
+    background: #226A80;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property: background ;
+}
+
+#btn:hover{
+    background:green;
+}
+
+.content {
+    width: 100%; 
+    height: 80vh;
+    background: url(../Images/background.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+.content .info {
+    max-width: 100%;
+    padding-left: 650px;
+    padding-right: 20px;
+    padding-top: 200px;
+    text-align: justify;
+    justify-content: right;
+}
+
+.content .info p{
+    color: black;
+    font-size: 22px;
+    font-weight: 800;
+    text-shadow: #226A80;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.media{
+    max-width: 100%;
+    height: 70vh;
+    background-color: #2c5c44;
+    text-align: center;
+    display: flexbox;
+}
+
+.media h2{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    text-decoration: underline;
+    
+}
+
+.media .videos iframe{
+    display: inline-flex;
+    padding: 20;
+    text-align: center;
+    height: 80%;
+    width: 30%;
+    
+}
+
+.response{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 30px 20px;
+    background: url(../Images/bacground-form.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+form{
+    margin-top: 50px;
+    
+    padding-left: 80px;
+}
+
+.form{
+    margin: 0;
+    align-items: center;
+
+}
+
+.form h1{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+.form-control{
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid yellowgreen;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+    
+}
+
+input{
+    height: 22px;
+}
+
+
+form #submit{
+    background: #ff5722;
+    border-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 35px;
+    margin-top: 1px;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.donation{
+    align-items: center;
+    padding-left: 400px;
+    box-sizing: border-box;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.box{
+    text-align: left;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px 60px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+
+.box img{
+    width: 60px;
+}
+
+.box h2{
+    font-size: 30px;
+    color: green;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.box p{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+
+
+
+#form{
+    margin: 0;
+    text-align: justify;
+    padding-left: 100px;
+}
+
+
+footer{
+    text-align: center;
+    background-color: rgb(47, 47, 48);
+    padding: 30px;
+}
+
+.btm-nav{
+    top: 0;
+    position: relative;
+    width: 100%;
+    padding: 2px 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.btm-nav a{
+    color:black ;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 00.3s;
+    transition-property: background;
+}
+
+.btm-nav a:hover{
+    background: white;
+}
+
+footer div{
+    padding-top: 30px;
+}
+
+.btm-media-icons {
+    padding-top: 20px;
+
+}
+
+.btm-media-icons a{
+    width: 40px;
+    height: 40px;
+}
+
+#copyright{
+    font-size: 14px;
+    font-style: italic;
+}
+
+/*responsiveness*/
+@media (max-width: 1024px) and (min-width: 800px){
+
+    header .media-icons a{
+        font-size: 19px;
+    }
+
+    .top .navigation a{
+        padding: 4px 9px;
+        width: 80px;
+        font-size: 14px;
+    }
+    
+    .top .navigation a:not(:last-child){
+        margin-right: 3px;
+    }
+
+    #img-h{
+        width: 150px;
+    }
+
+    #btn{
+        padding: 5px 9px;
+        
+    }
+
+    .content {
+    
+        height: 60vh;
+        
+    }
+    
+    
+    .content .info {
+        justify-content: center;
+        text-align: justify;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    
+    .content .info p{
+        font-size: 20px;
+        
+    }
+
+    .media{
+        height: 50vh;
+    }
+    
+    .media .videos iframe{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        height: 70%;
+        width: 30%;
+        
+    }
+
+    .response{
+        height: 90vh;
+        flex-direction: column;
+    }
+
+    form{
+        margin-top: 5px;
+        
+        padding-left: 8px;
+    }
+    
+    .form{
+        margin: 0;
+        align-items: center;
+    
+    }
+    
+    .form h1{
+        font-size: 17px;
+    
+    }
+    
+    
+    .form-control{
+        width: 60%;
+        font-size: 13px;
+        margin-bottom: 8px;
+        
+    }
+    
+    input{
+        height: 15px;
+    }
+    
+    
+    form #submit{
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        height: 19px;
+    }
+
+    .donation{
+        align-items: center;
+        padding-left: 100px;
+    }
+    
+    
+    .box{
+        text-align: center;
+        width:85%;
+        padding: 5% 5%;
+    }
+    
+    
+    .box img{
+        width: 20px;
+    }
+    
+    .box h2{
+        font-size: 20px;
+        padding: 10px;
+        
+    }
+    
+    .box p{
+        font-size: 15px;
+        font-weight: 600;
+        padding: 5px;
+        letter-spacing: 1px;
+    }
+
+
+}
+
+@media (max-width: 799px) and (min-width: 561px) {
+
+    header {
+        
+        padding: 4px 2px;
+        
+    }
+
+    header .media-icons a{
+        font-size: 15px;
+    }
+
+    .top .navigation a{
+        padding: 1px 3px;
+        width: 80px;
+        font-size: 9px;
+    }
+    
+    .top .navigation a:not(:last-child){
+        margin-right: 3px;
+    }
+
+    #img-h{
+        width: 100px;
+    }
+
+    #btn{
+        padding: 3px 7px;
+        
+    }
+
+    .content {
+    
+        height: 60vh;
+        
+    }
+    
+    
+    .content .info {
+        justify-content: center;
+        text-align: justify;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    
+    .content .info p{
+        font-size: 20px;
+        
+    }
+
+    .media{
+        height: 50vh;
+    }
+    
+    .media .videos iframe{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        height: 70%;
+        width: 30%;
+        
+    }
+
+    .response{
+        height: 85vh;
+        flex-direction: column;
+    }
+
+    form{
+        margin-top: 5px;
+        
+        padding-left: 8px;
+    }
+    
+    .form{
+        margin: 0;
+        align-items: center;
+    
+    }
+    
+    .form h1{
+        font-size: 17px;
+    
+    }
+    
+    
+    .form-control{
+        width: 60%;
+        font-size: 13px;
+        margin-bottom: 8px;
+        
+    }
+    
+    input{
+        height: 15px;
+    }
+    
+    
+    form #submit{
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        height: 19px;
+    }
+
+    .donation{
+        align-items: center;
+        padding-left: 100px;
+    }
+    
+    
+    .box{
+        text-align: center;
+        width:85%;
+        padding: 5% 5%;
+    }
+    
+    
+    .box img{
+        width: 20px;
+    }
+    
+    .box h2{
+        font-size: 20px;
+        padding: 10px;
+        
+    }
+    
+    .box p{
+        font-size: 15px;
+        font-weight: 600;
+        padding: 5px;
+        letter-spacing: 1px;
+    }
+
+    
+    
+
+
+}
+
+@media (max-width: 560px){
+    header {
+        padding: 3px,1px
+        
+    }
+    
+    header .media-icons a{
+        font-size: 12px;
+    }
+
+
+    .top{
+        padding: 2px 2px;
+        justify-content: space-between;
+    }
+    
+    .top .navigation a{
+        padding: 1px 3px;
+        width: 80px;
+        font-size: 7px;
+
+    }
+    
+    .top .navigation a:not(:last-child){
+        margin-right:2px;
+    }
+
+    #img-h{
+        width: 90px;
+    }
+    
+    #btn{
+        padding: 2px 5px;
+        
+    }
+
+    .content {
+        width: 100%; 
+        height: 50vh;
+    
+    }
+    
+    .content .info {
+        max-width: 100%;
+        text-align: left;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-right: 10px;
+    }
+
+    .content .info p{
+        font-size: 13px;
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 30px;
+        
+        
+    }
+
+    .media{
+        max-width: 100%;
+        text-align: center;
+        display: flexbox;
+    }
+    
+    .media h2{
+        font-size: 17px;
+        
+    }
+    
+    .media .videos iframe{
+        display: flex;
+    
+        text-align: center;
+        height: 40%;
+        width: 50%;
+        
+    }
+    
+    .response{
+        width: 100%;
+        height: 80vh;
+        flex-direction: column;
+    }
+
+    form{
+        margin-top: 5px;
+        
+        padding-left: 8px;
+    }
+    
+    .form{
+        margin: 0;
+        align-items: center;
+    
+    }
+    
+    .form h1{
+        font-size: 17px;
+    
+    }
+    
+    
+    .form-control{
+        width: 200px;
+        font-size: 13px;
+        margin-bottom: 8px;
+        
+    }
+    
+    input{
+        height: 15px;
+    }
+    
+    
+    form #submit{
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        height: 19px;
+    }
+
+    .donation{
+        align-items: center;
+        padding-left: 100px;
+    }
+    
+    
+    .box{
+        text-align: left;
+        width: 200px;
+        border-radius: 20px;
+        padding: 10px 20px;
+        padding-right: 20px;
+        position: relative;
+    }
+    
+    
+    .box img{
+        width: 17px;
+    }
+    
+    .box h2{
+        font-size: 18px;
+        padding: 10px;
+        
+    }
+    
+    .box p{
+        font-size: 12px;
+        font-weight: 600;
+        padding: 5px;
+        letter-spacing: 1px;
+    }
+}
+    
